@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <audio src="music/winmusic.mp3" id="musicwin"></audio>
+    <audio src="music/losemusic.mp3" id="musiclose"></audio>
+    <div class="container">
+        <h1 id="playerText">Tic Tac Toe </h1>
+        
+
+        <div id="gameboard">
+            <div class="box" id="box0" onclick="creat_shape0() ; check()">
+                <div id="circle0" class="circle"></div>
+                <div id="cross0" class="cross"></div>
+            </div>
+            <div class="box" id="box1" onclick="creat_shape1() ; check()">
+                <div id="circle1" class="circle"></div>
+                <div id="cross1" class="cross"></div>
+            </div>
+            <div class="box" id="box2" onclick="creat_shape2() ; check()">
+                <div id="circle2" class="circle"></div>
+                <div id="cross2" class="cross"></div>
+            </div>
+            <div class="box" id="box3" onclick="creat_shape3() ; check()">
+                <div id="circle3" class="circle"></div>
+                <div id="cross3" class="cross"></div>
+            </div>
+            <div class="box" id="box4" onclick="creat_shape4() ; check()">
+                <div id="circle4" class="circle"></div>
+                <div id="cross4" class="cross"></div>
+            </div>
+            <div class="box" id="box5" onclick="creat_shape5() ; check()">
+                <div id="circle5" class="circle"></div>
+                <div id="cross5" class="cross"></div>
+            </div>
+            <div class="box" id="box6" onclick="creat_shape6() ; check()">
+                <div id="circle6" class="circle"></div>
+                <div id="cross6" class="cross"></div>
+            </div>
+            <div class="box" id="box7" onclick="creat_shape7() ; check()">
+                <div id="circle7" class="circle"></div>
+                <div id="cross7" class="cross"></div>
+            </div>
+            <div class="box" id="box8" onclick="creat_shape8() ; check()">
+                <div id="circle8" class="circle"></div>
+                <div id="cross8" class="cross"></div>
+            </div>
+        </div>
+        <div class="turn" id="turn">turn player is x</div>
+        <a  onclick="restart()">Restart</a>
+
+    </div>
+
+
+    <script src="Js/App.js"></script>
+</body>
+
+</html>
